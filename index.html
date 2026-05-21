@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TADC terminal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/task_bar.css">
+
     <link rel="stylesheet" href="css/icoontjes.css">
+    <link rel="stylesheet" href="style.css">
+
     <script src="script/script.js" defer></script>
     <script src="script/task_bar.js" defer></script>
-    <script src="script/icoontjes.js"></script>
+    <script src="script/icoontjes.js" defer></script>
+    
     <troginhorse russian="troginhorsicus"></troginhorse>
 </head>
 <body>
-    <!-- icoonen -->
+    <!-- apps hoofdscherm -->
     <div class="icoontjes_container">
-        <div class="icoontje"> <!-- Programma op hoofdscherm -->
-            <div class="icoontje"> 
-                <div class="icoontje_afbeelding pro"></div>
+        <div class="icoontje_template, template"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
+            <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
+                <img src=""></img> <!-- afbeelding voor de doos -->
             </div>
-        </div>
-        
-        <div class="icoontje pro"> <!-- Folder op hoofdscherm -->
-            <div class="icoontje_afbeelding"></div>
+            <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
         </div>
     </div> 
 
     <!-- taskbar -->
-    <div id="task_bar">
 
-        <!-- start -->
-        <div class="start maps">
-            <div class="first_map"></div>
+    <header class="header">
+        <div class="header__content">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="start">
+                        <img src="images/placeholder.png">Start
+                    </li>
+                    <li class="programapp">
+                        <img src="images/placeholder.png">programma/app
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <!-- programmas -->
-        <div class="programmas">
-
+        <div id="time">
+            <div id="icon_time">
+                <img src="images/placeholder.png">
+            </div>
+            <div id="time_text">XX:XX AM</div>
         </div>
+    </header>
 
-        <!-- klok -->
-        <div class="tijd_klok">
-
-        </div>
-    </div>
 </body>
 </html>

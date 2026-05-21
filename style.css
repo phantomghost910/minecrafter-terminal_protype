@@ -2,42 +2,145 @@ body {
     background-color: teal;
     color: white;
     font-size: 17.9px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 35px;
 }
 
-a {
-    color: white;
+.template { /* template element */
+  display: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+/* bar onderkant */
 
-ul li {
-  float: center;
-  margin-right: auto;
-  margin-left: auto;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 97.3vh;
+    height: 35px;
+    background-color: #D3D3D3;
+  }
+  .start {
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 85px;
+    margin-left: 2px;
+    gap: 10px;
+  }
+
+  .programapp {
+    width: 297px;
+    height: 30px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .programapp img {
+    width: 23px;
+    height: 23px;
+    margin-left: 4px;
+  }
+
+  .start img {
+    width: 23px;
+    height: 23px;
+  }
+
+  #test {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+    height: 35px;
+  }
+
+  #time {
+    width: 170px;
+    height: 30px;
+    background-color: blue;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+  }
+
+  #icon_time {
+    width: 21.99px;
+    height: 23px;
+    margin-left: 5px;
+  }
+
+  #icon_time img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #time_text {
+    margin-left: auto;
+    margin-right: 16px;
+  }
+  
+  .nav__list{
+    display: flex;
+    gap: 7px;
+    color: black;
+  }
+
+/* app/folder icoontje + app/folder container */
+
+.icoontjes_container {
   display: flex;
-  justify-content: space-around;
+  gap: 60px;
+  width: 90px;
+  margin-left: 29px;
+  flex-direction: column;
+  margin-top: 3px;
+  background-color: red;
 }
 
-ul li a {
-  display: block;
-  color: white;
+.icoontje_template {
+  background-color: green;
+  height: 83.07px;
+}
+
+.icoontje_text {
+  width: 120px;
+  background-color: purple;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #111111;
-
+  margin-left: -30px;
+  margin-top: 7px;
 }
 
 .icoontje {
-    width: 49.66px;
-    height: 51.0;
+  display: flex;
+  flex-direction: column;
+  width: 59.66px;
+  height: 61.23px;
+  background-color: green;
+}
+
+.icoontje img { /* MOET MOGELIJK WORDEN AANGEPAST!! - Nicolas */
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
