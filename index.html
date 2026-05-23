@@ -9,45 +9,54 @@
     <link rel="stylesheet" href="css/icoontjes.css">
     <link rel="stylesheet" href="style.css">
 
-    <script src="script/script.js" defer></script>
+    <script src="script/start_up.js" defer></script>
     <script src="script/task_bar.js" defer></script>
     <script src="script/icoontjes.js" defer></script>
     
     <troginhorse russian="troginhorsicus"></troginhorse>
 </head>
 <body>
-    <!-- apps hoofdscherm -->
-    <div class="icoontjes_container">
-        <div class="icoontje_template, template"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
-            <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
-                <img src=""></img> <!-- afbeelding voor de doos -->
+    <div id="start_up" onclick="startup()"> <!-- Dit is de start-up scherm. -->
+        <div id="c_and_a_logo_startup">
+            <img src="images/C&A logo (dark).png">
+        </div>
+    </div>
+
+    <div id="main_computerinterface"> <!-- Alle belangrijke componenten van de computer interface (folderomgeving, programma's, hoofdscherm, enz.) staan hier -->
+        
+        <!-- apps hoofdscherm -->
+        <div class="icoontjes_container">
+            <div class="icoontje_template, template"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
+                <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
+                    <img src=""></img> <!-- afbeelding voor de doos -->
+                </div>
+                <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
             </div>
-            <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
-        </div>
-    </div> 
+        </div> 
 
-    <!-- taskbar -->
+        <!-- taskbar -->
 
-    <header class="header">
-        <div class="header__content">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="start">
-                        <img src="images/placeholder.png">Start
-                    </li>
-                    <li class="programapp">
-                        <img src="images/placeholder.png">programma/app
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div id="time">
-            <div id="icon_time">
-                <img src="images/placeholder.png">
+        <header class="header">
+            <div class="header__content">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="start">
+                            <img src="images/placeholder.png">Start
+                        </li>
+                        <li class="programapp">
+                            <img src="images/placeholder.png">programma/app
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div id="time_text">XX:XX AM</div>
-        </div>
-    </header>
+            <div id="time">
+                <div id="icon_time">
+                    <img src="images/placeholder.png">
+                </div>
+                <div id="time_text">XX:XX AM</div>
+            </div>
+        </header>
 
+    </div>
 </body>
 </html>
