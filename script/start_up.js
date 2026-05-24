@@ -1,7 +1,7 @@
 let startup_scherm = document.getElementById("start_up");
 let startupscherm_logo = document.getElementById("c_and_a_logo_startup");
 
-startupscherm_logo.style.display = "none";
+/* startupscherm_logo.style.display = "none";
 startup_scherm.style.background = "black";
 
 function startup() {
@@ -25,4 +25,4 @@ function startup() {
     setTimeout(function() {
         startup_scherm.style.display = "none";
     }, 11000)
-}
+} */

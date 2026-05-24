@@ -12,11 +12,12 @@
     <script src="script/start_up.js" defer></script>
     <script src="script/task_bar.js" defer></script>
     <script src="script/icoontjes.js" defer></script>
+    <script src="script/start_menu.js" defer></script>
     
     <troginhorse russian="troginhorsicus"></troginhorse>
 </head>
 <body>
-    <div id="start_up" onclick="startup()"> <!-- Dit is de start-up scherm. -->
+    <div id="start_up" onclick="startup()"> <!-- Dit is de start-up scherm -->
         <div id="c_and_a_logo_startup">
             <img src="images/C&A logo (dark).png">
         </div>
@@ -36,19 +37,42 @@
 
         <!-- taskbar -->
 
-        <header class="header">
-            <div class="header__content">
-                <nav class="nav">
+        <header class="header"> <!-- Taskbar met start-tab en andere tabs -->
+
+                    <div id="start_menu"> <!-- Startmenu -->
+                        <div id="nameos_container">
+                            <div id="name_os">Caine & Abel</div>
+                        </div>
+                        <div id="startmenuappsfolders_container">
+                            <div class="option_startmenu, template"> <!-- Template startmenu optie -->
+                                <div class="icoontje startmenu_icoontje"><img src="images/folder_template.png"></div>
+                                <div class="startmenuoption_text">Programs</div>
+                                <div class="arrow_startmenu"></div>
+                                
+                                <div class="optionsextratab_container"> <!-- !!! -->
+                                    <div class="options_extratab, template">
+                                        <div class="optionsextratab_icoontje"></div>
+                                        <div class="optionsextratab_naam">
+                                            Naam
+                                        </div>
+                                        <div class="arrow_extratab"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
                     <ul class="nav__list">
                         <li class="start">
-                            <img src="images/placeholder.png">Start
+                            <img src="images/placeholder.png"><b>Start</b>
                         </li>
                         <li class="programapp">
-                            <img src="images/placeholder.png">programma/app
+                            <img src="images/placeholder.png"><div class="programmaapp_text">programma/app</div>
                         </li>
                     </ul>
-                </nav>
-            </div>
             <div id="time">
                 <div id="icon_time">
                     <img src="images/placeholder.png">
