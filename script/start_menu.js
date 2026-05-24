@@ -62,6 +62,11 @@ for (let x in options) {
 }
 
 function revealExtraTabs(status) {
+    let startmenu_optie = document.querySelector(`.${status}`);
+    console.log(startmenu_optie);
+
+    startmenu_optie.setAttribute("onclick", `closeExtraTabs('${status}')`);
+
     let container_extratabs = document.querySelector(`.${status}_extratabscontainer`) // Extra tab container
     marginTopCount = -70
 
@@ -71,7 +76,7 @@ function revealExtraTabs(status) {
         marginTopCount = marginTopCount + 49;
 
         let extra_tabs = document.createElement("div"); // Dit wordt gezamenlijk de extra tab
-        extra_tabs.className += "options_extratab"
+        extra_tabs.className += `options_extratab ${status}_extratab`
         extra_tabs.innerHTML = `${y}`
 
         container_extratabs.style.display = "flex";
@@ -82,17 +87,15 @@ function revealExtraTabs(status) {
     }
 
 
-    let count_object = Object.keys(options).length;
-    console.log(Object.keys(options).length);
-    console.log(count_object);
+    let count_object = Object.keys(options[`${status}`]).length
 
-    let startmenu_optie = document.querySelector(`.${status}`);
-    startmenu_optie.setAttribute("onclick", `closeExtraTabs('${status}')`);
+    // console.log(Object.keys(options.Documents).length); !!!!!
+    console.log(count_object);
 
     
     if (container_extratabs.childElementCount > count_object) {
         while (container_extratabs.childElementCount > count_object) {
-            container_extratabs.removeChild(document.querySelector('.options_extratab'));
+            container_extratabs.removeChild(document.querySelector(`.${status}_extratab`));
     }
 }
 }
