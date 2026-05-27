@@ -18,7 +18,7 @@ let options = {
     "Shut Down": "shut_down"
 }
 
-
+// Functie om startmenu tabs toe te voegen (en alvast de container van de tabs van de startmenu tabs)
 for (let x in options) {
     
 
@@ -61,6 +61,7 @@ for (let x in options) {
     }
 }
 
+// Functie om tabs bij startmenu extra tabs te weergeven
 function revealExtraTabs(status) {
     let startmenu_optie = document.querySelector(`.${status}`);
     console.log(startmenu_optie);
@@ -78,6 +79,7 @@ function revealExtraTabs(status) {
         let extra_tabs = document.createElement("div"); // Dit wordt gezamenlijk de extra tab
         extra_tabs.className += `options_extratab ${status}_extratab`
         extra_tabs.innerHTML = `${y}`
+        extra_tabs.setAttribute('onclick', 'test()');
 
         container_extratabs.style.display = "flex";
         container_extratabs.style.marginTop = marginTopCount + "px";
@@ -100,10 +102,31 @@ function revealExtraTabs(status) {
 }
 }
 
+// Functie om tabs bij startmenu extra tabs te verstoppen
 function closeExtraTabs(status) {
     let hide_element = document.querySelector(`.${status}_extratabscontainer`);
     hide_element.style.display = "none";
 
     let menuStart = document.querySelector(`.${status}`);
     menuStart.setAttribute("onclick", `revealExtraTabs('${status}')`);
+}
+
+// Functie om startmenu open en dicht te doen
+let start_bar = document.querySelector(".start");
+let start_menu = document.getElementById("start_menu");
+
+function openStartMenu(status) {
+    if (status == 'open') {
+        start_menu.style.display = "flex";
+        start_bar.setAttribute('onclick', "openStartMenu('close')");
+    }
+
+    if (status == 'close') {
+        start_menu.style.display = "none";
+        start_bar.setAttribute('onclick', "openStartMenu('open')")
+    }    
+}
+
+function test() {
+    window.alert("test success");
 }
