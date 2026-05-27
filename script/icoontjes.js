@@ -31,6 +31,12 @@ function addFolderApp(naam, image) {
         icoontje_template.appendChild(icoontje_text);
 
         icoontje_text.innerHTML = naam;
+        icoontje_template.onclick = warning
+}
+
+document.getElementById("warning")
+function warning(){
+    alert("can't load windows.apps(error code=432)")
 }
 
 

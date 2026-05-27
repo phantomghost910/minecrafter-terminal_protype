@@ -6,7 +6,6 @@
 
     <title>TADC terminal</title>
 
-    <link rel="stylesheet" href="css/icoontjes.css">
     <link rel="stylesheet" href="style.css">
 
     <script src="script/start_up.js" defer></script>
@@ -25,15 +24,14 @@
     <div id="main_computerinterface"> <!-- Alle belangrijke componenten van de computer interface (folderomgeving, programma's, hoofdscherm, enz.) staan hier -->
         
         <!-- apps hoofdscherm -->
-        <div class="icoontjes_container">
-            <div class="icoontje_template, template"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
-                <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
-                    <img src=""></img> <!-- afbeelding voor de doos -->
+            <div class="icoontjes_container">
+                <div class="icoontje_template, template" onclick="warning()" id="warning"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
+                    <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
+                        <img src=""></img> <!-- afbeelding voor de doos -->
+                    </div>
+                    <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
                 </div>
-                <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
-            </div>
-        </div> 
-
+            </div> 
         <!-- taskbar -->
 
         <header class="header"> <!-- Taskbar met start-tab en andere tabs -->
