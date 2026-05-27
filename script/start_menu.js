@@ -1,12 +1,12 @@
 let options = {
     Programs: {
-        Accessories: "test failed",
-        "Online Services": "",
-        StartUp: "",
-        "Internet Explorer": "",
-        "C&A-CLI Prompt": "",
-        Email: "",
-        "OS Explorer": "os_explorer"
+        Accessories: "folder",
+        "Online Services": "folder",
+        StartUp: "folder",
+        "Internet Explorer": "program",
+        "C&A-CLI Prompt": "program",
+        Email: "program",
+        "OS Explorer": "os explorer"
     },
     Documents: {
         "abc": ""
@@ -77,15 +77,13 @@ function revealExtraTabs(status) {
         marginTopCount = marginTopCount + 49;
 
         let extra_tabs = document.createElement("div"); // Dit wordt gezamenlijk de extra tab
-        extra_tabs.className += `options_extratab ${status}_extratab`
+        extra_tabs.className += `options_extratab ${status}_extratab ${y}`
         extra_tabs.innerHTML = `${y}`
-        extra_tabs.setAttribute('onclick', `test('${y}')`);
+        extra_tabs.setAttribute('onclick', `test('${status}', '${y}')`);
 
         container_extratabs.style.display = "flex";
         container_extratabs.style.marginTop = marginTopCount + "px";
         container_extratabs.appendChild(extra_tabs);
-
-        
     }
 
 
@@ -127,9 +125,19 @@ function openStartMenu(status) {
     }    
 } */
 
-function test(status) {
-    for (let x in options[`${status}`]) {
-        console.log(x);
-    }
-    
+function test(base, child_base) { // later bewerken
+    console.log(base);
+    console.log(child_base);
+
+    if (options[base][child_base] == "program") {
+        window.alert("can't load windows.apps(error code=432)");
+    };
+
+    if (options[base][child_base] == "folder") {
+        window.alert("can't load windows.folders(error code=432)");
+    };
+
+    if (options[base][child_base] == "os explorer") {
+        window.alert("os explorer opent");
+    };
 }
