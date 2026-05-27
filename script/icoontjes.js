@@ -44,26 +44,26 @@ function warning(){
 for (let key in hoofdscherm_appsfolders) {
     if (key == "My Computer") {
         console.log("my computer files goed ingesteld (verander dit later in js)");
-        addFolderApp("My Computer", "images/app_template.png");
+        addFolderApp("My Computer", "images/my_computer.png");
     }
 
     if (key == "Network Neighborhood") {
         console.log("network neighborhood files goed ingesteld (verander dit later in js)");
-        addFolderApp("Network Neighborhood", "images/app_template.png");
+        addFolderApp("Network Neighborhood", "images/network.png");
     }
 
     if (key == "Inbox") {
         console.log("Inbox files goed ingesteld (verander dit later in js)");
-        addFolderApp("Inbox", "images/app_template.png");
+        addFolderApp("Inbox", "images/inbox.png");
     }
 
     if (key == "Recycle Bin") {
         console.log("Recycle bin files goed ingesteld (verander dit later in js)");
-        addFolderApp("Recycle Bin", "images/app_template.png");
+        addFolderApp("Recycle Bin", "images/trashbin.png");
     }
 
     if (key == "My Briefcase") {
         console.log("My briefcase files goed ingesteld (verander dit later in js)");
-        addFolderApp("My Briefcase", "images/folder_template.png");
+        addFolderApp("My Briefcase", "images/My_Briefcase_1995.webp");
     }
 }
