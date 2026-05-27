@@ -1,12 +1,12 @@
 let options = {
     Programs: {
-        Accessories: "",
+        Accessories: "test failed",
         "Online Services": "",
         StartUp: "",
         "Internet Explorer": "",
         "C&A-CLI Prompt": "",
         Email: "",
-        "OS Explorer": ""
+        "OS Explorer": "os_explorer"
     },
     Documents: {
         "abc": ""
@@ -79,7 +79,7 @@ function revealExtraTabs(status) {
         let extra_tabs = document.createElement("div"); // Dit wordt gezamenlijk de extra tab
         extra_tabs.className += `options_extratab ${status}_extratab`
         extra_tabs.innerHTML = `${y}`
-        extra_tabs.setAttribute('onclick', 'test()');
+        extra_tabs.setAttribute('onclick', `test('${y}')`);
 
         container_extratabs.style.display = "flex";
         container_extratabs.style.marginTop = marginTopCount + "px";
@@ -111,7 +111,7 @@ function closeExtraTabs(status) {
     menuStart.setAttribute("onclick", `revealExtraTabs('${status}')`);
 }
 
-// Functie om startmenu open en dicht te doen
+/* Functie om startmenu open en dicht te doen
 let start_bar = document.querySelector(".start");
 let start_menu = document.getElementById("start_menu");
 
@@ -125,8 +125,11 @@ function openStartMenu(status) {
         start_menu.style.display = "none";
         start_bar.setAttribute('onclick', "openStartMenu('open')")
     }    
-}
+} */
 
-function test() {
-    window.alert("test success");
+function test(status) {
+    for (let x in options[`${status}`]) {
+        console.log(x);
+    }
+    
 }
