@@ -1,3 +1,19 @@
+/* Functie om startmenu open en dicht te doen
+let start_bar = document.querySelector(".start");
+let start_menu = document.getElementById("start_menu");
+
+function openStartMenu(status) {
+    if (status == 'open') {
+        start_menu.style.display = "flex";
+        start_bar.setAttribute('onclick', "openStartMenu('close')");
+    }
+
+    if (status == 'close') {
+        start_menu.style.display = "none";
+        start_bar.setAttribute('onclick', "openStartMenu('open')")
+    }    
+} */
+
 let options = {
     Programs: {
         Accessories: "folder",
@@ -18,7 +34,7 @@ let options = {
     "Shut Down": "shut_down"
 }
 
-// Functie om startmenu tabs toe te voegen (en alvast de container van de tabs van de startmenu tabs)
+// Functie om startmenu tabs toe te voegen (en alvast de container van de extra tabs van de startmenu tabs)
 for (let x in options) {
     
 
@@ -108,22 +124,6 @@ function closeExtraTabs(status) {
     let menuStart = document.querySelector(`.${status}`);
     menuStart.setAttribute("onclick", `revealExtraTabs('${status}')`);
 }
-
-/* Functie om startmenu open en dicht te doen
-let start_bar = document.querySelector(".start");
-let start_menu = document.getElementById("start_menu");
-
-function openStartMenu(status) {
-    if (status == 'open') {
-        start_menu.style.display = "flex";
-        start_bar.setAttribute('onclick', "openStartMenu('close')");
-    }
-
-    if (status == 'close') {
-        start_menu.style.display = "none";
-        start_bar.setAttribute('onclick', "openStartMenu('open')")
-    }    
-} */
 
 function test(base, child_base) { // later bewerken
     console.log(base);

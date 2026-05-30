@@ -281,3 +281,179 @@ body {
   height: 100%;
   background-color: blue;
 }
+
+#folderomgeving_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.folder_omgeving {
+  position: relative;
+  width: 1200px;
+  background-color: gray;
+  margin-left: 30vw;
+  margin-top: 43px;
+  padding: 9px;
+  padding-bottom: 44px;
+}
+
+.folderomgeving_top {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  height: 26px;
+}
+
+.name_and_icon {
+  display: flex;
+}
+
+.folderomgeving_options {
+  display: flex;
+  gap: 3px;
+  margin-left: auto;
+  margin-right: 4px;
+}
+
+.folderomgeving_options img {
+  width: 100%;
+  height: 100%;
+}
+
+.icon_folderomgeving {
+  width: 21.28px;
+  height: 21.28px;
+  margin-left: 4px;
+}
+
+.icon_folderomgeving img {
+  width: 100%;
+  height: 100%;
+}
+
+.folder_location {
+  margin-left: 6px;
+}
+
+.option_box {
+  width: 24.77px;
+  height: 23px;
+  background-color: gray;
+}
+
+.folderomgeving_center {
+  overflow-x: scroll;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  background-color: green;
+  color: black;
+}
+
+.folderomgevingcenteroptions_container {
+  margin-left: 14px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  border-bottom: 1px solid black;
+  gap: 36px;
+}
+
+.folderomgevingcenter_otheroptionscontainer {
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.welkeomgeving_tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 316px;
+  height: 35px;
+  background-color: gray;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.welkeomgeving_icoontje {
+  width: 31.4px;
+  height: 30px;
+  background-color: red;
+  margin-left: 6px;
+}
+
+.welkeomgeving_text {
+  background-color: red;
+  margin-left: 7.5px;
+}
+
+.otheroptions_buttons {
+  display: flex;
+  height: 35px;
+  margin-left: 12.5px;
+  gap: 10px;
+}
+
+.rowoptions {
+  display: flex;
+}
+
+.otheroption_button {
+  width: 36.4px;
+  height: 35px;
+  background-color: gray;
+}
+
+.otheroption_button img {
+  width: 100%;
+  height: 100%;
+}
+
+.folderomgeving_omgeving {
+  background-color: white;
+  box-sizing: border-box;
+  height: 600px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.folderprogram_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 57px;
+  margin-top: 6px;
+  gap: 68px;
+}
+
+.folder-program {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+
+.folderprogram_icon {
+  width: 59.66px;
+  height: 61.23px;
+  background-color: gray;
+}
+
+.folderprogram_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.folderprogram_text {
+  text-align: center;
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+  width: 120px;
+  margin-left: -30px;
+}
