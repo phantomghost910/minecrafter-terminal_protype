@@ -291,23 +291,25 @@ body {
 
 .folder_omgeving {
   position: relative;
+  display: none;
   width: 1200px;
   background-color: gray;
   margin-left: 30vw;
   margin-top: 43px;
   padding: 9px;
-  padding-bottom: 44px;
+  padding-bottom: 8px;
 }
 
 .folderomgeving_top {
   display: flex;
   align-items: center;
   background-color: red;
-  height: 26px;
+  height: 36px;
 }
 
 .name_and_icon {
   display: flex;
+  align-items: center;
 }
 
 .folderomgeving_options {
@@ -323,8 +325,8 @@ body {
 }
 
 .icon_folderomgeving {
-  width: 21.28px;
-  height: 21.28px;
+  width: 28.28px;
+  height: 28.28px;
   margin-left: 4px;
 }
 
@@ -338,14 +340,12 @@ body {
 }
 
 .option_box {
-  width: 24.77px;
-  height: 23px;
+  width: 31.77px;
+  height: 28.66px;
   background-color: gray;
 }
 
 .folderomgeving_center {
-  overflow-x: scroll;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -355,8 +355,7 @@ body {
 }
 
 .folderomgevingcenteroptions_container {
-  margin-left: 14px;
-  height: 34px;
+  height: 44px;
   display: flex;
   align-items: center;
   background-color: yellow;
@@ -364,10 +363,16 @@ body {
   gap: 36px;
 }
 
+.file {
+  margin-left: 14px;
+}
+
 .folderomgevingcenter_otheroptionscontainer {
-  height: 45px;
+  background-color: purple;
   display: flex;
   align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .welkeomgeving_tab {
@@ -375,7 +380,7 @@ body {
   flex-direction: row;
   align-items: center;
   min-width: 316px;
-  height: 35px;
+  height: 45px;
   background-color: gray;
   box-sizing: border-box;
   border: 1px solid black;
@@ -389,13 +394,17 @@ body {
 }
 
 .welkeomgeving_text {
-  background-color: red;
+  background-color: yellow;
   margin-left: 7.5px;
 }
 
 .otheroptions_buttons {
+  overflow: scroll;
+  overflow: hidden;
   display: flex;
-  height: 35px;
+  align-items: center;
+  background-color: green;
+  display: flex;
   margin-left: 12.5px;
   gap: 10px;
 }
@@ -405,8 +414,8 @@ body {
 }
 
 .otheroption_button {
-  width: 36.4px;
-  height: 35px;
+  width: 46.4px;
+  height: 45px;
   background-color: gray;
 }
 
@@ -416,11 +425,13 @@ body {
 }
 
 .folderomgeving_omgeving {
+  overflow-y: scroll;
   background-color: white;
   box-sizing: border-box;
   height: 600px;
   border-left: 1px solid black;
   border-top: 1px solid black;
+  padding-bottom: 80px;
 }
 
 .folderprogram_container {
@@ -456,4 +467,41 @@ body {
   background-color: aqua;
   width: 120px;
   margin-left: -30px;
+}
+
+.howmany_selected {
+  display: flex;
+  align-items: center;
+  width: 57%;
+  height: 37px;
+  background-color: red;
+  margin-top: 7px;
+}
+
+.folderomgeving_bottom {
+  display: flex;
+  gap: 10px;
+}
+
+.other_status {
+  width: 43%;
+  height: 37px;
+  background-color: red;
+  margin-top: 7px;
+}
+
+.objects {
+  margin-left: 4px;
+}
+
+.arrow_welkeomgevintab {
+  width: 36px;
+  background-color: red;
+  height: 43px;
+  margin-left: auto;
+}
+
+.arrow_welkeomgevintab img {
+  width: 100%;
+  height: 100%;
 }

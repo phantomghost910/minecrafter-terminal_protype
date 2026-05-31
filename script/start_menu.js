@@ -138,6 +138,6 @@ function test(base, child_base) { // later bewerken
     };
 
     if (options[base][child_base] == "os explorer") {
-        window.alert("os explorer opent");
+        showFolderOmgeving('os explorer');
     };
 }
