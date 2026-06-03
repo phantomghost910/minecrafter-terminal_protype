@@ -32,6 +32,7 @@ function addFolderApp(naam, image) {
 
         icoontje_text.innerHTML = naam;
         icoontje_template.onclick = warning
+        
 }
 
 document.getElementById("warning")
