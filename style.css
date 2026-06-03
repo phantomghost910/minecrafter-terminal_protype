@@ -284,9 +284,9 @@ body {
 
 #folderomgeving_container {
   position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 50%;
+  width: 0%;
+  height: 0%;
+
 }
 
 .folder_omgeving {
