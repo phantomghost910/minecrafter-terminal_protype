@@ -296,7 +296,7 @@ function showFolderOmgeving(name) {
     if (name == 'AI_folder') {
         current_location.innerHTML = "AI"
         folder_name.innerHTML = "C:\\CANDA\\Characters\\AI";
-        
+
         addFolderProgram("???", "images/placeholder.png");
         addFolderProgram("CAINE", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Emblem-important-red.svg/1280px-Emblem-important-red.svg.png?utm_source=meta.wikimedia.org&utm_campaign=index&utm_content=thumbnail");
     }

@@ -508,6 +508,24 @@ body {
 
 /* caine terminal */
 
-.terminal{
-  position: absolute;
+#terminal_container{
+  z-index: -1;
+  background-color: black;
+  display: none;
+}
+.terminal_open{
+  z-index: 2!important; 
+  background-color: black;
+  height: 400px;
+  width: 400px;
+}
+
+.input_terminal{
+  display: none;
+}
+.terminal_outside{
+  background-color: aqua;
+}
+.command_line{
+  background-color: red;
 }
