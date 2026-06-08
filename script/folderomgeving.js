@@ -9,7 +9,7 @@ function addFolderProgram(text, url){
     let container = document.createElement("div");
     container.classList += 'folder-program';
     container.id = text;
-    container.setAttribute('onclick', 'bar()');
+    container.setAttribute('onclick', "popupOpen('cantopen')");
 
     let icon_container = document.createElement("div");
     icon_container.classList = 'folderprogram_icon';
@@ -300,6 +300,10 @@ function showFolderOmgeving(name) {
         addFolderProgram("???", "images/placeholder.png");
         addFolderProgram("CAINE", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Emblem-important-red.svg/1280px-Emblem-important-red.svg.png?utm_source=meta.wikimedia.org&utm_campaign=index&utm_content=thumbnail");
     }
+}
+
+function closeFolderOmgeving() {
+    folderomgeving.style.display = 'none';
 }
 
 function deleteInside() {

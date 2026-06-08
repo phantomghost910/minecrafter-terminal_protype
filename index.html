@@ -13,162 +13,18 @@
     <script src="script/start_menu.js" defer></script>
     <script src="script/folderomgeving.js" defer></script>
     <script src="script/terminal.js" defer></script>
+    <script src="script/popup.js" defer></script>
 
     <troginhorse russian="troginhorsicus"></troginhorse>
 </head>
 <body>
-    <div id="start_up" onclick="startup()"> <!-- Dit is de start-up scherm -->
-        <div id="c_and_a_logo_startup">
-            <img src="images/C&A logo (dark).png">
-        </div>
-    </div>
-
-    <!-- Folderomgeving / OS explorer template -->
-
-        <div id="folderomgeving_container">
-            <div class="folder_omgeving">
-                    <div class="folderomgeving_top">
-                        <div class="name_and_icon">
-                            <div class="icon_folderomgeving">
-                                <img src="images/placeholder.png">
-                            </div>
-                            <div class="folder_location">
-                                Exploring - C:\
-                            </div>
-                        </div>
-
-                        <div class="folderomgeving_options">
-                            <div class="option_box option_hide">
-                                <img src="images/placeholder.png">
-                            </div>
-                            <div class="option_box option_minimalize">
-                                <img src="images/placeholder.png">
-                            </div>
-                            <div class="option_box option_exit">
-                                <img src="images/placeholder.png">
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="folderomgeving_center">
-                        <div class="folderomgevingcenteroptions_container">
-                            <div class="folderomgevingcenter_option file">
-                                <span><u>F</u>ile</span>
-                            </div>
-                            <div class="folderomgevingcenter_option edit">
-                                <span><u>E</u>dit</span>
-                            </div>
-                            <div class="folderomgevingcenter_option folder">
-                                <span><u>V</u>iew</span>
-                            </div>
-                            <div class="folderomgevingcenter_option folder">
-                                <span><u>H</u>elp</span>
-                            </div>
-                        </div>
-                        <div class="folderomgevingcenter_otheroptionscontainer">
-                            <div class="welkeomgeving_tab">
-                                <div class="welkeomgeving_icoontje">
-                                </div>
-
-                                <div class="welkeomgeving_text">
-                                    placeholder
-                                </div>
-
-                                <div class="arrow_welkeomgevintab">
-                                    <img src="https://images.icon-icons.com/1339/PNG/512/arrowpointingdown_87499.png">
-                                </div>
-                            </div>
-                            <div class="otheroptions_buttons">
-                                <div class="rowoptions rowoptions_1">
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                </div>
-
-                                <div class="rowoptions rowoptions_2">
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                </div>
-
-                                <div class="rowoptions rowoptions_3">
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                </div>
-
-                                <div class="rowoptions rowoptions_4">
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                </div>
-
-                                <div class="rowoptions rowoptions_5">
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                </div>
-
-                                <div class="rowoptions rowoptions_6">
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="otheroption_button">
-                                        <img src="images/placeholder.png">
-                                    </div>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="folderomgeving_omgeving">
-                            <div class="folderprogram_container">
-                                <div class="folder-program"> <!-- Template -->
-                                    <div class="folderprogram_icon">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="folderprogram_text">
-                                        text
-                                    </div>
-                                </div>
-                                <div class="folder-program"> <!-- Template -->
-                                    <div class="folderprogram_icon">
-                                        <img src="images/placeholder.png">
-                                    </div>
-                                    <div class="folderprogram_text">
-                                        text
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="folderomgeving_bottom">
-                        <div class="howmany_selected">
-                            <div class="objects">-- object(s)</div>
-                        </div>
-                        <div class="other_status"></div>
-                    </div>
+        <!-- Dit is de start-up scherm -->
+        <div id="start_up" onclick="startup()"> 
+            <div id="c_and_a_logo_startup">
+                <img src="images/C&A logo (dark).png">
             </div>
-            
         </div>
+
         <!-- terminal begin -->
         <div id="terminal_container">
             <div class="terminal_outside">
@@ -187,62 +43,272 @@
             </div>
         </div>
         <!-- terminal end -->
-    <div id="main_computerinterface"> <!-- Alle belangrijke componenten van de computer interface (folderomgeving, programma's, hoofdscherm, enz.) staan hier -->
-        
-        <!-- apps hoofdscherm -->
-            <div class="icoontjes_container">
-                <div class="icoontje_template, template"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
-                    <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
-                        <img src=""></img> <!-- afbeelding voor de doos -->
-                    </div>
-                    <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
-                </div>
-            </div> 
-        <!-- taskbar -->
-        <header class="header"> <!-- Taskbar met start-tab en andere tabs -->
 
-                    <div id="start_menu"> <!-- Startmenu -->
-                        <div id="nameos_container">
-                            <div id="name_os">Caine & Abel</div>
+        <!-- Alle belangrijke componenten van de computer interface (folderomgeving, programma's, hoofdscherm, enz.) staan hier -->
+        <div id="main_computerinterface"> 
+
+            
+            <!-- Pop-up inlogbar + blokker achtergrond -->
+             <div id="achtergrondblokker_inlogbar">
+                    <div class="login_omgeving popup" id="log_in">
+                    <div class="folderomgeving_top">
+                        <div class="name_and_icon">
+                            <div class="login_popupname">Welcome to C&A OS</div>
                         </div>
-                        <div id="startmenuappsfolders_container">
-                            <div class="option_startmenu, template"> <!-- Template startmenu optie -->
-                                <div class="icoontje startmenu_icoontje"><img src="images/folder_template.png"></div>
-                                <div class="startmenuoption_text">Programs</div>
-                                <div class="arrow_startmenu"></div>
-                                
-                                <div class="optionsextratab_container"> <!-- !!! -->
-                                    <div class="options_extratab, template">
-                                        <div class="optionsextratab_icoontje"></div>
-                                        <div class="optionsextratab_naam">
-                                            Naam
-                                        </div>
-                                        <div class="arrow_extratab"></div>
-                                    </div>
-                                    
+                        <div class="folderomgeving_options">
+                            <div class="option_box option_exit" onclick="popupClose('inlog')">
+                                <img src="images/placeholder.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folderomgeving_omgeving" id="popup_omgeving">
+                        <div class="tekstenicoonpopup_container" id="inlogtekst_container">
+                            <div class="popup_icoontje">
+                                <img src="images/placeholder.png" alt="">
+                            </div>
+                            <div class="tekst_popup" id="containerinfo_inlog">
+                                Type a user name and password to log on to C&A OS.
+                                <br>
+                                <br>
+                                <br>
+                                <div class="login_textcontainer"><u>U</u>ser name: <textarea class="input_box" wrap="off"></textarea></div>
+                                <div class="login_textcontainer"><u>P</u>assword: <textarea class="input_box" id="password_input" wrap="off"></textarea></div>
+                            </div>
+                            <div id="buttonoptions_container">
+                                <div class="optie optie_incontainer" onclick="popupClose('inlog')">OK</div>
+                                <div class="optie optie_incontainer" onclick="popupClose('inlog')">Cancel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+            
+            <!-- Pop-up bar -->
+            <div class="popup" id="popupbar_omgeving">
+                <div class="folderomgeving_top">
+                    <div class="name_and_icon">
+                        <div class="popup_name">Unable to load application/folder</div>
+                    </div>
+                    <div class="folderomgeving_options">
+                        <div class="option_box option_exit" onclick="popupClose('cantopen')">
+                            <img src="images/placeholder.png" alt="">
+                        </div>
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="folderomgeving_omgeving" id="popup_omgeving">
+                    <div class="tekstenicoonpopup_container"> <!-- !!!  -->
+                        <div class="popup_icoontje"> <!-- !!! -->
+                            <img src="images/placeholder.png" alt="">
+                        </div>
+                        <div class="tekst_popup">Can't load application/folder (error code=31)</div> <!-- !!! -->
+                    </div>
+
+                    <div class="optie" onclick="popupClose('cantopen')">OK</div>
+                </div>
+             </div>
+             
+            <!-- Folderomgeving / OS explorer template -->
+            <div id="folderomgeving_container">
+                <div class="folder_omgeving">
+                        <div class="folderomgeving_top">
+                            <div class="name_and_icon">
+                                <div class="icon_folderomgeving">
+                                    <img src="images/placeholder.png">
+                                </div>
+                                <div class="folder_location">
+                                    Exploring - C:\
+                                </div>
+                            </div>
+
+                            <div class="folderomgeving_options">
+                                <div class="option_box option_hide">
+                                    <img src="images/placeholder.png">
+                                </div>
+                                <div class="option_box option_minimalize">
+                                    <img src="images/placeholder.png">
+                                </div>
+                                <div class="option_box option_exit" onclick="closeFolderOmgeving()">
+                                    <img src="images/placeholder.png">
                                 </div>
                             </div>
                             
                         </div>
-                    </div>
-                    
 
-                    <ul class="nav__list">
-                        <li class="start" onclick="openStartMenu('open')">
-                            <img src=""><b>Start</b>
-                        </li>
-                        <li class="programapp">
-                            <img src="images/placeholder.png"><div class="programmaapp_text">programma/app</div>
-                        </li>
-                    </ul>
-            <div id="time">
-                <div id="icon_time">
-                    <img src="images/placeholder.png">
+                        <div class="folderomgeving_center">
+                            <div class="folderomgevingcenteroptions_container">
+                                <div class="folderomgevingcenter_option file">
+                                    <span><u>F</u>ile</span>
+                                </div>
+                                <div class="folderomgevingcenter_option edit">
+                                    <span><u>E</u>dit</span>
+                                </div>
+                                <div class="folderomgevingcenter_option folder">
+                                    <span><u>V</u>iew</span>
+                                </div>
+                                <div class="folderomgevingcenter_option folder">
+                                    <span><u>H</u>elp</span>
+                                </div>
+                            </div>
+                            <div class="folderomgevingcenter_otheroptionscontainer">
+                                <div class="welkeomgeving_tab">
+                                    <div class="welkeomgeving_icoontje">
+                                    </div>
+
+                                    <div class="welkeomgeving_text">
+                                        placeholder
+                                    </div>
+
+                                    <div class="arrow_welkeomgevintab">
+                                        <img src="https://images.icon-icons.com/1339/PNG/512/arrowpointingdown_87499.png">
+                                    </div>
+                                </div>
+                                <div class="otheroptions_buttons">
+                                    <div class="rowoptions rowoptions_1">
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="rowoptions rowoptions_2">
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="rowoptions rowoptions_3">
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="rowoptions rowoptions_4">
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="rowoptions rowoptions_5">
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="rowoptions rowoptions_6">
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="otheroption_button">
+                                            <img src="images/placeholder.png">
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="folderomgeving_omgeving">
+                                <div class="folderprogram_container">
+                                    <div class="folder-program"> <!-- Template -->
+                                        <div class="folderprogram_icon">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="folderprogram_text">
+                                            text
+                                        </div>
+                                    </div>
+                                    <div class="folder-program"> <!-- Template -->
+                                        <div class="folderprogram_icon">
+                                            <img src="images/placeholder.png">
+                                        </div>
+                                        <div class="folderprogram_text">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="folderomgeving_bottom">
+                            <div class="howmany_selected">
+                                <div class="objects">-- object(s)</div>
+                            </div>
+                            <div class="other_status"></div>
+                        </div>
                 </div>
-                <div id="time_text">XX:XX AM</div>
+                
             </div>
-        </header>
 
-    </div>
+            <!-- apps hoofdscherm -->
+                <div class="icoontjes_container">
+                    <div class="icoontje_template, template"> <!-- template element, 'doos' waarin app/folder zich vormgeeft -->
+                        <div class="icoontje"> <!-- doos waarin afbeelding template komt -->
+                            <img src=""></img> <!-- afbeelding voor de doos -->
+                        </div>
+                        <div class="icoontje_text">My Computer (test)</div> <!-- tekst van de app/folder -->
+                    </div>
+                </div> 
+            <!-- taskbar -->
+            <header class="header"> <!-- Taskbar met start-tab en andere tabs -->
+
+                        <div id="start_menu"> <!-- Startmenu -->
+                            <div id="nameos_container">
+                                <div id="name_os">Caine & Abel</div>
+                            </div>
+                            <div id="startmenuappsfolders_container">
+                                <div class="option_startmenu, template"> <!-- Template startmenu optie -->
+                                    <div class="icoontje startmenu_icoontje"><img src="images/folder_template.png"></div>
+                                    <div class="startmenuoption_text">Programs</div>
+                                    <div class="arrow_startmenu"></div>
+                                    
+                                    <div class="optionsextratab_container"> <!-- !!! -->
+                                        <div class="options_extratab, template">
+                                            <div class="optionsextratab_icoontje"></div>
+                                            <div class="optionsextratab_naam">
+                                                Naam
+                                            </div>
+                                            <div class="arrow_extratab"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+
+                        <ul class="nav__list">
+                            <li class="start" onclick="openStartMenu('open')">
+                                <img src="images/C&A-Pixel.png"><b>Start</b>
+                            </li>
+                            <li class="programapp">
+                                <img src="images/placeholder.png"><div class="programmaapp_text">programma/app</div>
+                            </li>
+                        </ul>
+                <div id="time">
+                    <div id="icon_time">
+                        <img src="images/placeholder.png">
+                    </div>
+                    <div id="time_text">8:25 PM</div>
+                </div>
+            </header>
+
+        </div>
 </body>
 </html>

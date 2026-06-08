@@ -125,16 +125,13 @@ function closeExtraTabs(status) {
     menuStart.setAttribute("onclick", `revealExtraTabs('${status}')`);
 }
 
+// Functie om errorcodes door te geven
 function test(base, child_base) { // later bewerken
     console.log(base);
     console.log(child_base);
 
-    if (options[base][child_base] == "program") {
-        window.alert("can't load windows.apps(error code=432)");
-    };
-
-    if (options[base][child_base] == "folder") {
-        window.alert("can't load windows.folders(error code=432)");
+    if (options[base][child_base] == "program" || options[base][child_base] == "folder") {
+        popupOpen('cantopen');
     };
 
     if (options[base][child_base] == "os explorer") {

@@ -111,6 +111,18 @@ body {
     margin-top: 4px;
   }
 
+  #achtergrondblokker_inlogbar {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  #log_in {
+    display: block;
+    width: 739px;
+  }
+
   .option_startmenu {
     display: flex;
     height: 70.15px;
@@ -212,6 +224,7 @@ body {
   }
 
   #time {
+    font-size: 25px;
     width: 170px;
     height: 30px;
     background-color: blue;
@@ -289,7 +302,8 @@ body {
 
 }
 
-.folder_omgeving {
+.folder_omgeving, .login_omgeving, #popupbar_omgeving {
+  z-index: 1;
   position: relative;
   display: none;
   width: 1200px;
@@ -298,6 +312,24 @@ body {
   margin-top: 43px;
   padding: 9px;
   padding-bottom: 8px;
+}
+
+#popupbar_omgeving {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  margin-top: 400px;
+  width: 465px;
+  padding-bottom: 0;
+  margin-left: calc(50vw - 232.5px);
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  padding-bottom: 0;
+  margin-left: calc(50vw - 369.5px);
+  margin-top: 200px;
 }
 
 .folderomgeving_top {
@@ -335,7 +367,7 @@ body {
   height: 100%;
 }
 
-.folder_location {
+.folder_location, .login_popupname, .popup_name {
   margin-left: 6px;
 }
 
@@ -432,6 +464,108 @@ body {
   border-left: 1px solid black;
   border-top: 1px solid black;
   padding-bottom: 80px;
+}
+
+.tekstenicoonpopup_container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  gap: 39px;
+}
+
+#inlogtekst_container {
+  align-items: flex-start;
+  background-color: red;
+  align-items: space;
+  gap: 0;
+}
+
+#buttonoptions_container {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  background-color: blue;
+  margin-left: 65px;
+  margin-top: 3px;
+  gap: 11px;
+}
+
+#popup_omgeving {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: rgb(107, 107, 107);
+  overflow: hidden;
+}
+
+.popup_icoontje {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+}
+
+.popup_icoontje img {
+  width: 100%;
+  height: 100%;
+}
+
+.tekst_popup {
+  margin-top: 4.5px;
+  background-color: yellow;
+}
+
+#containerinfo_inlog {
+  margin-left: 38px;
+}
+
+.optie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 38px;
+  background-color: white;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 66px;
+}
+
+#userdetails_container {
+  background-color: blueviolet;
+}
+
+.optie_incontainer {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#userpassword_container {
+  width: 100px;
+}
+
+.optioncontainer {
+  background-color: aqua;
+}
+
+.login_textcontainer {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  width: 260px;
+}
+
+.input_box {
+  width: 150px;
+  height: 25px;
+  background-color: white;
+  margin-left: 20px;
+}
+
+#password_input {
+  margin-left: 28.5px;
 }
 
 .folderprogram_container {

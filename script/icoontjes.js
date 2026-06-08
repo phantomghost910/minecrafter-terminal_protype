@@ -31,7 +31,7 @@ function addFolderApp(naam, image) {
         icoontje_template.appendChild(icoontje_text);
 
         icoontje_text.innerHTML = naam;
-        icoontje_template.onclick = warning
+        icoontje_template.setAttribute("onclick", "popupOpen('cantopen')");
         
 }
 
