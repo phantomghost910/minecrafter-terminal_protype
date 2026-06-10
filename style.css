@@ -675,3 +675,14 @@ right: 0;
   width: 100%;
   height: 40px;
 }
+.terminal_creative{
+  background-color: blueviolet;
+  top: 40px;
+  width: 100%;
+  height: 30px;
+}
+#terminal_close{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}

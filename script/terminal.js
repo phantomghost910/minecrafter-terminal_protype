@@ -8,3 +8,6 @@ function terminal(){
     open.setAttribute( 'class', 'terminal_open' );
 
 }
+function closing(){
+    open.removeAttribute( 'class', 'terminal_open' );
+}
