@@ -1,5 +1,10 @@
+var open = document.getElementById('terminal_container')
+var caine_folder = document.getElementById('caine')
 
-function popupOpen(){
+
+
+function terminal(){
     console.log('click op terminal');
+    open.setAttribute( 'class', 'terminal_open' );
 
 }
