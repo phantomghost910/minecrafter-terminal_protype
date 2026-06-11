@@ -299,7 +299,11 @@ function showFolderOmgeving(name) {
 
         addFolderProgram("???", "images/placeholder.png");
         addFolderProgram("CAINE", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Emblem-important-red.svg/1280px-Emblem-important-red.svg.png?utm_source=meta.wikimedia.org&utm_campaign=index&utm_content=thumbnail");
+        var caine_folder = document.getElementById('CAINE');
+        caine_folder.removeAttribute("onclick", "popupOpen('cantopen')");
+        caine_folder.setAttribute("onclick", "terminal()");
     }
+
 }
 
 function closeFolderOmgeving() {
@@ -313,7 +317,5 @@ function deleteInside() {
 
 function bar() {
     window.alert("can't load windows.apps(error code=432)");
-    let caine_folder = document.getElementById("CAINE");
-    caine_folder.setAttribute('onclick', 'terminal()');
-    caine_folder.removeAttribute('onclick', 'bar()');
+
 }
