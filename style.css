@@ -693,7 +693,6 @@ position: absolute;
 
 /* glitch scherm */
 #glitch_screen {
-  display: none;
   margin-left: 0;
   margin-top: 0;
   position: absolute;
@@ -703,35 +702,63 @@ position: absolute;
   z-index: 2;
 }
 
+#glitch_screen1 { /* MISSCHIEN body laten bewegen als dit uitgevoerd wordt met JS - Nicolas */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: none;
+}
+
+#glitch_screen1 img {
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+}
+
 #glitch_screen2 {
+  display: none;
   width: 100%;
   height: 100%;
 }
 
-#glitch_element_1-1 {
+#glitch_screen3 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch_element_1-1 {
   margin-left: 10vw;
 }
 
-#g_e_1-1a {
+#white_bars_container {
+  position: absolute;
+  width: 100%;
+
+  margin-left: 10%;
+}
+
+.g_e_1-1a {
   width: 60%;
   height: 30px;
   background-color: white;
 }
 
-#g_e_1-2a {
+.g_e_1-2a {
   width: 78%;
   height: 34px;
   background-color: white;
   margin-top: 10px;
 }
 
-#g_e_1-1b {
+.g_e_1-1b {
   width: 75%;
   height: 20px;
   background-color: white;
 }
 
-#g_e_1-2c {
+.g_e_1-2c {
   width: 48%;
   height: 38px;
   background-color: white;
@@ -767,10 +794,11 @@ position: absolute;
   width: 100%;
 }
 
-#glitchelement_2-4 {
+#glitchelement_2-4-2 {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 6vh !important;
 }
 
 #g_e_2-1_a {
@@ -856,31 +884,31 @@ position: absolute;
 
 
 
-#g_e_2-3_a {
+.g_e_2-3_a {
   width: 30%;
   background-color: rgb(170, 11, 170);
   height: 40px;
 }
 
-#g_e_2-3_b {
+.g_e_2-3_b {
   width: 13%;
   background-color: rgb(170, 11, 170);
   height: 24px;
 }
 
-#g_e_2-3_c {
+.g_e_2-3_c {
   width: 28.3%;
   background-color: rgb(170, 11, 170);
   height: 24px;
 }
 
-#g_e_2-3_d {
+.g_e_2-3_d {
   width: 29.6%;
   background-color: rgb(170, 11, 170);
   height: 24px;
 }
 
-#g_e_2-3_e {
+.g_e_2-3_e {
   width: 37%;
   background-color: rgb(170, 11, 170);
   height: 25px;
@@ -889,13 +917,13 @@ position: absolute;
 
 
 
-#g_e_2-4_a {
+.g_e_2-4_a {
   width: 17%;
   height: 60px;
   background-color: gray;
 }
 
-#g_e_2-4_b {
+.g_e_2-4_b {
   width: 10%;
   height: 60px;
   background-color: gray;
@@ -907,49 +935,55 @@ position: absolute;
   background-color: gray;
 }
 
-#g_e_2-4_d_container {
+#g_e_2-4_c_2 {
+  width: 4%;
+  height: 75vh;
+  background-color: gray;
+}
+
+.g_e_2-4_d_container {
   display: flex;
 }
 
-#g_e_2-4_d1 {
+.g_e_2-4_d1 {
   width: 12%;
   height: 60px;
   background-color: gray;
 }
 
-#g_e_2-4_d2 {
+.g_e_2-4_d2 {
   width: 59%;
   height: 60px;
   background-color: rebeccapurple;
 }
 
-#g_e_2-4_d2 {
+.g_e_2-4_d2 {
   width: 59%;
   height: 60px;
   background-color: transparent;
 }
 
-#g_e_2-4_d3 {
+.g_e_2-4_d3 {
   width: 4%;
   height: 60px;
   background-color: gray;
   opacity: 60%;
 }
 
-#g_e_2-4_d4 {
+.g_e_2-4_d4 {
   width: 4%;
   height: 60px;
   background-color: gray;
   opacity: 80%;
 }
 
-#g_e_2-4_d5 {
+.g_e_2-4_d5 {
   width: 4%;
   height: 60px;
   background-color: gray;
 }
 
-#g_e_2-4_d6 {
+.g_e_2-4_d6 {
   width: 4%;
   height: 60px;
   background-color: gray;
@@ -1117,16 +1151,71 @@ position: absolute;
 
 #icons {
   position: absolute;
+  z-index: 3;
 }
 
-#middle_caine {
+#caine_1 {
   margin-left: calc(50vw - 12.5vw);
   margin-top: calc(50vh - 370px);
 }
 
+#caine_2 {
+  margin-top: 460px;
+  rotate: -45deg;
+  scale: 0.9;
+}
+
+#caine_3 {
+  margin-top: -25vh;
+  rotate: 30deg;
+  scale: 0.9;
+  margin-left: 70vw;
+}
+
+#caine_4 {
+  rotate: 30deg;
+  scale: 0.9;
+  margin-top: 87vh;
+  margin-left: 14vw;
+}
+
+#caine_5 {
+  rotate: 10deg;
+  scale: 0.7;
+  margin-top: 85vh;
+  margin-left: 80vw;
+}
+
+#bubble_1 {
+  scale: 0.7;
+  rotate: -20deg;
+  margin-top: -17vh;
+  margin-left: -3vw;
+}
+
+#bubble_2 {
+  scale: 0.6;
+  rotate: 20deg;
+  margin-top: 25vh;
+  margin-left: 75vw;
+}
+
+#bubble_3 {
+  rotate: 20deg;
+  margin-top: 91vh;
+  margin-left: 45vw;
+}
+
+#bubble_4 {
+  rotate: 35deg;
+  margin-top: 83vh;
+  margin-left: -10vw;
+}
+
 .glitch_icon {
-  width: 25vw;
-  height: 25vw;
+  position: absolute;
+  width: 600px;
+  height: 600px;
 }
 
 .glitch_icon img {
