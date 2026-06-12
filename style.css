@@ -694,6 +694,7 @@ right: 0;
 
 /* glitch scherm */
 #glitch_screen {
+  display: none;
   margin-left: 0;
   margin-top: 0;
   position: absolute;
@@ -1158,12 +1159,14 @@ right: 0;
 #caine_1 {
   margin-left: calc(50vw - 12.5vw);
   margin-top: calc(50vh - 370px);
+  display: none;
 }
 
 #caine_2 {
   margin-top: 460px;
   rotate: -45deg;
   scale: 0.9;
+  display: none;
 }
 
 #caine_3 {
@@ -1171,6 +1174,7 @@ right: 0;
   rotate: 30deg;
   scale: 0.9;
   margin-left: 70vw;
+  display: none;
 }
 
 #caine_4 {
@@ -1178,6 +1182,7 @@ right: 0;
   scale: 0.9;
   margin-top: 87vh;
   margin-left: 14vw;
+  display: none;
 }
 
 #caine_5 {
@@ -1185,6 +1190,7 @@ right: 0;
   scale: 0.7;
   margin-top: 85vh;
   margin-left: 80vw;
+  display: none;
 }
 
 #bubble_1 {
@@ -1192,6 +1198,7 @@ right: 0;
   rotate: -20deg;
   margin-top: -17vh;
   margin-left: -3vw;
+  display: none;
 }
 
 #bubble_2 {
@@ -1199,24 +1206,28 @@ right: 0;
   rotate: 20deg;
   margin-top: 25vh;
   margin-left: 75vw;
+  display: none;
 }
 
 #bubble_3 {
   rotate: 20deg;
   margin-top: 91vh;
   margin-left: 45vw;
+  display: none;
 }
 
 #bubble_4 {
   rotate: 35deg;
   margin-top: 83vh;
   margin-left: -10vw;
+  display: none;
 }
 
 .glitch_icon {
   position: absolute;
   width: 600px;
   height: 600px;
+  display: none;
 }
 
 .glitch_icon img {
