@@ -694,7 +694,7 @@ right: 0;
 
 /* glitch scherm */
 #glitch_screen {
-  display: none;
+  display: block;
   margin-left: 0;
   margin-top: 0;
   position: absolute;
@@ -725,7 +725,7 @@ right: 0;
 }
 
 #glitch_screen3 {
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
 }
@@ -925,7 +925,7 @@ right: 0;
   background-color: gray;
 }
 
-.g_e_2-4_b {
+#g_e_2-4_b {
   width: 10%;
   height: 60px;
   background-color: gray;
@@ -944,6 +944,8 @@ right: 0;
 }
 
 .g_e_2-4_d_container {
+  width: 100%;
+  background-color: red;
   display: flex;
 }
 

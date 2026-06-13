@@ -1,5 +1,6 @@
 // In dit bestand vindt u alle functies/werkingen voor de glitchende scherm.
 
+let body = document.querySelector("body");
 
 let icoontjescontainer = document.getElementById("icons");
 
@@ -18,27 +19,121 @@ let thirdsecondicons_caine = document.getElementById("bubble_4");
 
 let fourthicon_caine = document.getElementById("caine_4");
 
+// Alle glitchschermen die worden vertoond
+let glitchscherm1 = document.getElementById("glitch_screen1");
+let glitchscherm2 = document.getElementById("glitch_screen2");
+let glitchscherm3 = document.getElementById("glitch_screen3");
 
-// Functie vertonen icoontjes
+
+// Functie om gehele glitch scherm te activeren (incl. icoontjes)
+function activateGlitch() {
+
 setTimeout(function() {
     firsticon_caine.style.display = 'block';
-    firsticon_bubble.style.display = 'block';
 }, 300)
 
 setTimeout(function() {
-    secondoneicons_caine.style.display = 'block';
-    secondtwoicons_caine.style.display = 'block';
+    firsticon_bubble.style.display = 'block';
+    bubbleAndCaineNoise()
+}, 400)
 
+setTimeout(function() {
     secondoneicons_bubble.style.display = 'block';
-    secondtwoicons_bubble.style.display = 'block';
+    bubbleAndCaineNoise()
+}, 500)
+
+setTimeout(function() {
     secondthreeicons_bubble.style.display = 'block';
+    secondtwoicons_caine.style.display = 'block';
+    secondoneicons_caine.style.display = 'block';
+    bubbleAndCaineNoise()
+}, 600)
+
+setTimeout(function() {
+    secondthreeicons_bubble.style.display = 'block';
+    secondtwoicons_caine.style.display = 'block';
+    secondoneicons_caine.style.display = 'block';
+    bubbleAndCaineNoise()
 }, 700)
 
 setTimeout(function() {
-    thirdoneicons_caine.style.display = 'block';
     thirdsecondicons_caine.style.display = 'block';
-}, 1200)
+    bubbleAndCaineNoise()
+}, 800)
+
+setTimeout(function() {
+    thirdoneicons_caine.style.display = 'block';
+    bubbleAndCaineNoise()
+}, 900)
 
 setTimeout(function() {
     fourthicon_caine.style.display = 'block';
-}, 1500)
+    bubbleAndCaineNoise()
+}, 1200)
+
+
+
+
+let glitchscreen = setInterval(function(){
+
+    glitchScreen();
+
+}, 700)
+}
+
+
+// Functie om glitch scherm te activeren
+function glitchScreen() {
+    setTimeout(function() {
+        body.style.marginLeft = '-20px';
+        glitchscherm1.style.display = 'block';
+        glitchscherm2.style.display = 'none';
+        glitchscherm3.style.display = 'none';
+    }, 100)
+
+    setTimeout(function() {
+        body.style.marginLeft = '0px';
+        glitchscherm1.style.display = 'none';
+        glitchscherm2.style.display = 'none';
+        glitchscherm3.style.display = 'none';
+    }, 200)
+
+    setTimeout(function() {
+        body.style.marginLeft = '0px';
+        glitchscherm1.style.display = 'none';
+        glitchscherm2.style.display = 'none';
+        glitchscherm3.style.display = 'block';
+    }, 300)
+
+    setTimeout(function() {
+        body.style.marginLeft = '0px';
+        glitchscherm1.style.display = 'none';
+        glitchscherm2.style.display = 'block';
+        glitchscherm3.style.display = 'none';
+    }, 400)
+
+    setTimeout(function() {
+        body.style.marginLeft = '-20px';
+        glitchscherm1.style.display = 'block';
+        glitchscherm2.style.display = 'none';
+        glitchscherm3.style.display = 'none';
+    }, 500)
+
+    setTimeout(function() {
+        body.style.marginLeft = '0';
+        glitchscherm1.style.display = 'none';
+        glitchscherm2.style.display = 'none';
+        glitchscherm3.style.display = 'none';
+    }, 600)
+} 
+
+function bubbleAndCaineNoise() {
+    let sound = document.createElement("audio");
+    let source = document.createElement("source");
+    source.src = 'sounds/caineAndBubblePopUp.mp3';
+    sound.autoplay = 'true';
+    
+    body.appendChild(sound);
+    sound.appendChild(source)
+    console.log(sound);
+}
