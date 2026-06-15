@@ -14,13 +14,32 @@ function closing(){
 
 // beging binnen terminal
 
-let input = document.getElementById('typing_station');
+let input = document.getElementById('input_station');
 
 input.addEventListener('keypress', function(event) {
+    
+    let command = input.value;
     if (event.key === 'Enter') {
-        let command = input.value;
         event.preventDefault();
-        console.log('Command entered');
-        if 
+        console.log('Command entered' + command);
+            if (command === "rickroll" ){
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            console.log('rickroll');
+        }
+            if (command === i){
+
+        }
+            if (command === i){
+            
+        }
+            if (command === i){
+            
+        }
+            if (command === i){
+            
+        }
+
+
     }
+
 });
