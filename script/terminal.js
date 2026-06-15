@@ -14,3 +14,13 @@ function closing(){
 
 // beging binnen terminal
 
+let input = document.getElementById('typing_station');
+
+input.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        let command = input.value;
+        event.preventDefault();
+        console.log('Command entered');
+        if 
+    }
+});
