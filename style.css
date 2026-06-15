@@ -702,6 +702,7 @@ right: 0;
   height: 100%;
   overflow: hidden;
   z-index: 2;
+  display: none;
 }
 
 #glitch_screen1 { /* MISSCHIEN body laten bewegen als dit uitgevoerd wordt met JS - Nicolas */
