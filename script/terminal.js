@@ -29,18 +29,23 @@ input.addEventListener('keypress', function(event) {
             console.log('rickroll');
         }
             if (command === "systemctl root mount 'open'/kinger/ delete"){
-                check.setAttribute('class', 'check_1')
+                check.setAttribute('class', 'check1');
+                console.log('check 0');
+
         }
-            if (command === "" && check.contains("check_1")){
-                check.removeAttribute('class', 'check_1')
-                check.setAttribute('class', 'check_2')
+            if (command === "systemctl stop WACKYTIME_LOCKOUT" && check.classList.contains("check1")){
+                check.removeAttribute('class', 'check1');
+                check.setAttribute('class', 'check2');
+                console.log('check 1');
         }
-            if (command === "" && check.contains("check_2")){
-                check.removeAttribute('class', 'check_2')
-                check.setAttribute('class', 'check_3')
+            if (command === "./GreenGROUNDS --daemon --target=torment_injection &" && check.classList.contains("check2")){
+                check.removeAttribute('class', 'check2');
+                check.setAttribute('class', 'check3');
+                console.log('check 2');
         }
-            if (command === "" && check.contains("check_3")){
-                check.removeAttribute('class')
+            if (command === " -u kinger ./securitysweep_stealth" && check.classList.contains("check3")){
+                check.removeAttribute('class', 'check3');
+                console.log('check 3');
         }
         else {
             console.log("warning not a command")
