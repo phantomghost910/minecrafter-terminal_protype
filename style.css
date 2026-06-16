@@ -665,8 +665,15 @@ transform: translate(-50%, -50%);
 .input_terminal{
 position: absolute;
 bottom: 0;
-width: 55vw;
+width: 50.vw;
 right: 0;
+height: 40px;
+}
+.master_key {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
 
 .terminal_outside{
@@ -690,6 +697,11 @@ width: 30px;
 position: absolute;
 right: 0;
 }
+.if_statement_check {
+  display: none;
+  position: absolute;
+}
+.terminal_inside
 
 
 /* glitch scherm */
