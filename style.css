@@ -725,7 +725,7 @@ transform: translate(-50%, -50%);
 .input_terminal{
 position: absolute;
 bottom: 0;
-width: 50.vw;
+width: 50vw;
 right: 0;
 height: 40px;
 }
@@ -762,6 +762,13 @@ right: 0;
   position: absolute;
 }
 .terminal_inside{
+  background-color: aqua;
+}
+.typing_station{
+  position: absolute;
+  top:80px;
+  width: 100%;
+  height: 85%;
   background-color: aqua;
 }
 
