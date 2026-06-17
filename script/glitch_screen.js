@@ -23,6 +23,8 @@ let fourthicon_caine = document.getElementById("caine_4");
 let glitchscherm1 = document.getElementById("glitch_screen1");
 let glitchscherm2 = document.getElementById("glitch_screen2");
 let glitchscherm3 = document.getElementById("glitch_screen3");
+let glitch_container = document.getElementById("glitch_screen")
+
 
 
 // Functie om gehele glitch scherm te activeren (incl. icoontjes)
@@ -84,6 +86,8 @@ let glitchscreen = setInterval(function(){
 
 // Functie om glitch scherm te activeren
 function glitchScreen() {
+    
+    glitch_container.setAttribute('class', 'glitchshow')
     setTimeout(function() {
         glitchscherm1.style.display = 'block';
         glitchscherm2.style.display = 'none';
