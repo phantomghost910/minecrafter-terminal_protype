@@ -1,28 +1,26 @@
-let startup_scherm = document.getElementById("start_up");
-let startupscherm_logo = document.getElementById("c_and_a_logo_startup");
+let container = document.getElementById("start_up_container");
+let inlog_container = document.getElementById("achtergrondblokker_inlogbar");
 
-/* startupscherm_logo.style.display = "none";
-startup_scherm.style.background = "black";
+let bluescreen_startup = document.getElementById("blue_startup");
+let startup_screen = document.getElementById("start_up");
 
 function startup() {
-    startup_scherm.setAttribute("onclick", "");
-    setTimeout(function() {
-    startupscherm_logo.style.display = "flex";
-    startup_scherm.style.background = "url(images/background_startup.png)";
-    startup_scherm.style.backgroundSize = "cover";
-    startup_scherm.style.backgroundPosition = "center";
+    container.removeAttribute('onclick');
+    let audio_startup = document.createElement("audio");
+    audio_startup.src = 'sounds/startup.mp3';
+    audio_startup.autoplay = 'true';
 
-    let startup_sound = document.createElement("audio");
-        let startupsound_source = document.createElement("source");
+    bluescreen_startup.style.animationName = 'turnBlue';
+    setInterval(function() {
+        bluescreen_startup.style.animationName = 'turnBlue, continue';
+    }, 200)
 
-        startupscherm_logo.appendChild(startup_sound);
-        startup_sound.appendChild(startupsound_source);
-        startup_sound.autoplay = true;
-        startupsound_source.src = "sounds/placeholder_startupnoise.mp3";
-        startupsound_source.type = "audio/mp3";
-    }, 3000)
+    setInterval (function() {
+        startup_screen.style.animationName = 'continue';
+        startup_screen.style.animationDuration = '3s';
+    }, 9000)
 
-    setTimeout(function() {
-        startup_scherm.style.display = "none";
-    }, 11000)
-} */
+    setInterval(function() {
+        container.style.display = 'none';
+    }, 12000)
+}

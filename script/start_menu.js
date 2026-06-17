@@ -1,4 +1,4 @@
-/* Functie om startmenu open en dicht te doen
+// Functie om startmenu open en dicht te doen
 let start_bar = document.querySelector(".start");
 let start_menu = document.getElementById("start_menu");
 
@@ -12,7 +12,7 @@ function openStartMenu(status) {
         start_menu.style.display = "none";
         start_bar.setAttribute('onclick', "openStartMenu('open')")
     }    
-} */
+}
 
 let options = {
     Programs: {
@@ -50,7 +50,7 @@ for (let x in options) {
 
     let option_icon = document.createElement("img"); // Icoontje optie
 
-    option_icon.src = "images/folder_template.png"; // DIT BEWERKEN IN DE TOEKOMST!!
+    option_icon.src = `images/${x}.png`; // DIT BEWERKEN IN DE TOEKOMST!!
 
     let option_textcontainer = document.createElement("div"); // Text optie
     option_textcontainer.className += "startmenuoption_text";
